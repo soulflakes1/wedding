@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+:root {
+    --primary-font: 'Roboto Slab',
+        serif;
+    --secondary-font: 'Parisienne', cursive;
+    --primary-color: black;
+    --secondary-color: rgba(255, 255, 255, 0.78);
+    --big-font-size: clamp(2rem, 4vw, 5rem);
+    --primary-font-size: clamp(1.5rem, 3vw, 4rem);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--primary-font);
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+    color: var(--primary-color)
+}
+
+input,
+textarea,
+button,
+option {
+    font: inherit;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.547);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar p {
+    font-size: var(--primary-font-size);
+    margin-top: 1.5rem;
+    margin-right: 4rem;
+    color: var(--primary-color);
+}
+
+.img-div {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.headings {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--primary-font-size);
+    font-family: var(--big-font-size);
+    font-weight: 200;
+    white-space: nowrap;
+    color: var(--secondary-color);
+    position: absolute;
+    top: 81%;
+    left: 40%;
+}
+
+h2 {
+    font-size: var(--big-font-size);
+    font-family: var(--secondary-font);
+    white-space: nowrap;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 89%;
+    left: 41.5%;
+}
+
+.date-place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    height: 25vh;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 5rem;
+    margin-top: 10rem;
+    line-height: 8rem;
+}
+
+.save-the-date {
+    align-self: center;
+    font-weight: 600;
+}
+
+.line {
+    border-left: 2px solid black;
+}
+
+.info {
+    align-self: center;
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+}
+
+.countdown-div {
+    font-family: var(--secondary-font);
+    font-size: var(--primary-font-size);
+    color: black;
+    letter-spacing: 0.6rem;
+    word-spacing: 1.2rem;
+    margin: 25rem auto;
+    text-align: center;
+}
+
+.invitation {
+    height: 30vh;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    font-family: var(--secondary-font);
+    margin: auto;
+    background-color: rgba(250, 235, 215, 0.446);
+}
+
+.invitation h3 {
+    font-size: clamp(2rem, 2.5vw, 4.2rem);
+}
+
+.invitation p {
+    width: 300px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: clamp(1rem, 1vw, 4rem);
+    font-family: var(--primary-font);
+    flex-wrap: wrap;
+}
+
+.thanks {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    font-size: clamp(1rem, 1.2vw, 4rem);
+    text-align: center;
+}
+
+.thanks h3 {
+    font-family: var(--primary-font);
+}
+
+.venue {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    line-height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.venue p {
+    /* display: flex;
+    flex-direction: column; */
+    font-family: var(--primary-font);
+    font-size: 2rem;
+}
+
+.members {
+    position: relative;
+}
+
+.form>h3 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.form {
+    margin: 10rem;
+}
+
+form {
+    width: 50%;
+    border: 1.5px solid #444;
+    text-align: center;
+    margin: auto;
+    padding: 5rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+form input,
+form input:focus {
+    border-bottom: 1px solid #444;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+footer {
+    min-height: 20rem;
+    background-color: rgba(250, 235, 215, 0.446);
+}
