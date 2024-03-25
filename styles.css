@@ -31,8 +31,10 @@ html {
 body {
     min-height: 100vh;
     max-width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
-    color: var(--primary-color)
+    color: var(--primary-color);
+
 }
 
 input,
