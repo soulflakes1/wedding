@@ -17,7 +17,7 @@
             <img src="us.jpg" alt="Periklas & Maria" class="us-img">
             <div class="headings">
                 <h1>Περικλής & Μαρία</h1>
-                <h2>The Wedding</h2>
+                <h2><span></span> The Wedding <span></span></h2>
             </div>
         </div>
     </header>
@@ -39,7 +39,6 @@
             </div>
             <div class="invitation">
                 <h3>You are invited</h3>
-                <p>Σας προσκαλούμε να μας τιμήσετε με την παρουσία σας σ' αυτη την ιδιαίτερη στιγμή μας.</p>
             </div>
             <div class="thanks">
                 <h3>Ευχαριστούμε Θερμά</h3>
@@ -57,7 +56,7 @@
         <section class="venue">
             <div>
                 <h3>Church</h3>
-                <p>Ι.Ν. Αγίων Ιωακείμ και Άννης</p>
+                <p><box-icon name='map'></box-icon>Ι.Ν. Αγίων Ιωακείμ και Άννης</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31020.937425008236!2d26.0410810599093!3d35.189667396569476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1490f34ea50970f5%3A0x62b54afd3bb57ef6!2zzpkuzp0uIM6RzrPOr8-Jzr0gzpnPic6xzrrOtc6vzrwgzrrOsc65IM6Gzr3Ovc63z4I!5e0!3m2!1sel!2sgr!4v1710609185414!5m2!1sel!2sgr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -72,26 +71,21 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section>
-            <!--  <div class="members">
-                <p>Κουμπάροι</p>
-            </div> -->
-        </section>
         <section class="form">
             <h3>Hope to see you</h3>
             <form action="mailto: mariasoul.dd@gmail.com" method="get" id="RSVP">
                 <h3>RSVP</h3>
-                <p>Θα παρευρεθείτε:</p>
+                <p>Ενημερώστε μας για την παρουσία σας στο γάμο:</p>
                 <input type="radio" name="rsvp" id="Yes" value="Yes" checked>
                 <label for="Yes">Ναι, θα παρευρεθώ</label><br>
-                <input type="radio" name="rsvp" id="Νο" value="Δυστυχώς, δεν θα μπορέσω">
+                <input type="radio" name="rsvp" id="No" value="Δυστυχώς, δεν θα μπορέσω">
                 <label for="No">Δυστυχώς, δεν θα μπορέσω</label>
                 <br>
-                <label for="name">Όνομα:</label>
+                <label for="name">Ονοματεπώνυμο:</label>
                 <input type="text" id="name" name="name" required><br>
-                <label for="lastname">Επίθετο:</label>
-                <input type="text" id="lastname" name="lastname"><br>
-                <label for="plusone">Επιλέξτε πόσα άτομα θα είστε:</label>
+                <label for="tel">Τηλέφωνο επικοινωνίας:</label>
+                <input type="tel" id="tel" name="tel"><br>
+                <label for="plusone">Επιλέξτε πόσα άτομα θα είστε: </label>
                 <select name="plusone" id="plusone" required>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -100,6 +94,11 @@
                     <option value="5">5</option>
                     <option value="6">6</option>
                 </select><br>
+                <label for="extra-names">Ονοματεπώνυμα προσκεκλημένων εκ μέρους των οποίων δηλώνετε παρουσία</label>
+                <textarea name="extra-names" id="extra-names" cols="65" rows="5"></textarea>
+                <br>
+                <p>Παρακαλούμε ενημερώστε μας για την παρουσία ή την απουσία σας μέχρι τις <b>15/06/24</b>.</p>
+                <br>
                 <input type="submit">
             </form>
         </section>
